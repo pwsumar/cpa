@@ -1,0 +1,42 @@
+.section-banner {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform: translate3d(0px, 0px, 0px);
+
+  .transform-50 {
+    top: 57%;
+  }
+}
+.section-content {
+  padding: 4em 0;
+}
+.section-footer {
+  padding-bottom: 2em;
+}
+.section-header {
+	p {
+		color: #c5cbd2;
+		font-size: 16px;
+		font-family: @brand_med;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-bottom: 0;
+	}
+	h4 {
+		font-family: @brand_med;
+	}
+}
+.section-color {
+	position: relative;
+
+	&:before {
+		content: '';
+		background-color: #016eb6;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+	}
+}
