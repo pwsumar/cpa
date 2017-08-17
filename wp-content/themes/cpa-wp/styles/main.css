@@ -12293,7 +12293,6 @@ textarea:focus {
 }
 .section-content.content-services {
   font-family: 'RobotoRegular';
-  padding: 0;
 }
 .section-content.content-services .copy-header {
   color: #616161;
@@ -12522,6 +12521,9 @@ textarea:focus {
 .section-content.content-domestic span {
   margin-bottom: 1em;
   font-family: 'RobotoRegular';
+}
+.section-content.content-services.content-inter-island {
+  padding: 0;
 }
 .staff-tab ul {
   border: 0;
