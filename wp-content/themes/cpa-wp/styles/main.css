@@ -11564,7 +11564,7 @@ ul li a {
     height: 445px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 991px) {
   .l1-content .l1-img {
     height: 300px;
   }
@@ -11676,6 +11676,12 @@ ul li a {
 .list-social-blog a:hover {
   background-color: transparent;
   color: #000;
+}
+.grid-harbor .purpose-content {
+  min-height: 201px;
+}
+.grid-restrict .purpose-content {
+  min-height: 304px;
 }
 .form-control {
   border-radius: 0;
@@ -12123,6 +12129,7 @@ textarea:focus {
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
+  height: 394px;
 }
 .featured-projects .project-item-full a {
   display: inline-block;
@@ -12202,6 +12209,10 @@ textarea:focus {
 .staff-holder .staff-img img {
   width: 100%;
 }
+.staff-holder .staff-img .staff-bg {
+  height: 300px;
+  background-position: top;
+}
 .staff-holder h4 {
   font-size: 20px;
   color: #016eb6;
@@ -12227,6 +12238,22 @@ textarea:focus {
   line-height: 30px;
   margin-bottom: 0;
   max-width: 450px;
+}
+.port-featured .project-item-full {
+  height: 300px;
+}
+.port-featured span.caption span {
+  padding: 1.5em;
+  padding-right: 50px;
+  font-size: 15px;
+}
+.port-featured span.caption span i {
+  float: right;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  right: 25px;
+  font-size: 25px;
 }
 .staff-tab ul {
   border: 0;
@@ -12318,6 +12345,12 @@ textarea:focus {
   color: #333;
   margin: 1em 0 0 0;
   padding-left: 1.5em;
+}
+.agency-list {
+  padding-left: 30px;
+}
+.agency-list li p {
+  padding-left: 20px;
 }
 .navbar-main-menu {
   position: absolute;
@@ -12777,7 +12810,8 @@ textarea:focus {
 .text-white h4,
 .text-white h3,
 .text-white h2,
-.text-white p {
+.text-white p,
+.text-white a {
   color: #fff;
 }
 .fl-left {
@@ -13055,6 +13089,68 @@ textarea:focus {
   .system-img.bg-inline ul li.argao {
     top: 69%;
     right: 54%;
+  }
+  .purpose-content {
+    margin-bottom: 30px;
+  }
+  .section-color:before {
+    background-color: transparent;
+  }
+  .grid-cpc.text-white h4,
+  .grid-cpc.text-white p {
+    color: #333;
+  }
+  .featured-projects .project-item-full {
+    height: auto;
+  }
+  .featured-projects .project-item-full a {
+    display: block;
+  }
+  .featured-projects .project-item-full img {
+    width: 100%;
+  }
+  .featured-projects span.caption {
+    font-size: 13px;
+  }
+  .featured-projects span.caption span {
+    padding: 1em;
+    padding-right: 1em;
+  }
+  .featured-projects span.caption span i {
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    right: 15px;
+    font-size: 25px;
+  }
+  .pull-left {
+    float: none !important;
+  }
+  .l1-content .l1-desc {
+    padding: 2em;
+  }
+  .l1-content .l1-desc h3 {
+    font-size: 22px;
+  }
+  .section-header.single-blog h2 {
+    font-size: 23px;
+  }
+  .single-image .blog-img {
+    height: 300px;
+  }
+  .single-blog {
+    margin-bottom: 3em;
+  }
+  .staff-tab {
+    margin-bottom: 4em;
+  }
+  .staff-tab ul li a {
+    margin: 0 2em 0 1em;
+    padding: 1.5em;
+    max-width: initial;
+  }
+  .staff-header {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 600px) {

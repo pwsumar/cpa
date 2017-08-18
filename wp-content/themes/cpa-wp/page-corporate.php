@@ -177,7 +177,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             </div>
         </div>
         <div class="col-md-6">
-            <div class="grid-content text-white">
+            <div class="grid-content grid-cpc text-white">
               <div class="section-header">
                   <h4>Duties and Functions of Members of the Board:</h4>
               </div>

@@ -87,7 +87,7 @@ $selected_term = $wp_query->queried_object;
                                                     <a href="<?php the_field('staff_link'); ?>" target="_blank">
                                                         <div class="staff-holder">
                                                             <div class="staff-img">
-                                                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));?>" alt="">
+                                                                <div class="staff-bg bg-inline" style="background-image: url('<?php echo wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));?>'); "></div>
                                                             </div>
                                                             <div class="staff-header">
                                                                 <h4><?php the_title(); ?></h4>
