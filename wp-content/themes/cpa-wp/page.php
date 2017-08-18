@@ -1,41 +1,36 @@
 <?php
 /**
- * The template for displaying all pages
+ * 
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
  */
 
-get_header(); ?>
+get_header(); 
 
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+?>
 
-			<?php
-			while ( have_posts() ) : the_post();
+<!-- BANNER SECTION -->
+<div class="section-banner banner-subpage">
+    <div class="banner-bg bg-inline bg-gradient" style="background-image: url('http://cpa-wp/wp-content/uploads/2017/08/banner-cpa.png');"></div>
+    <div class="transform-50">
+        <div class="container">
+            <div class="banner-content text-center animatedParent animateOnce">
+                <h1><?php the_title(); ?></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-content animatedParent animateOnce">
+    <div class="container">
+        <div class="common-page mw-700">
+        	<?php the_content(); ?>
+        </div>
+    </div>
+</div>
 
-				get_template_part( 'template-parts/page/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
-
-<?php get_footer();
+<?php
+    endwhile; else :
+endif;
+get_footer();

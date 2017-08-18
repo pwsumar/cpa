@@ -100,3 +100,37 @@
     }
   }
 }
+
+.panel-default > .panel-heading {
+  background-color: #162d51;
+  padding: 20px;
+}
+.panel-title {
+  color: @white;
+  font-size: 15px;
+  max-width: 600px;
+  line-height: normal;
+
+  a {
+    font-family: @brand_med;
+
+    &:hover {
+      color: @white;
+    }
+  }
+}
+.panel-body {
+  padding: 25px 20px;
+
+  p {
+    margin-bottom: 10px;
+    color: #333;
+
+    a {
+      color: #132c57;
+    }
+  }
+}
+.panel-group .panel + .panel {
+  margin-top: 20px;
+}
