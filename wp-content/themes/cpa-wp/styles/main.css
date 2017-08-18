@@ -11732,6 +11732,18 @@ textarea:focus {
   border-color: #000;
   box-shadow: none;
 }
+.carousel-control {
+  background-color: transparent;
+  box-shadow: none !important;
+  background-image: none !important;
+  opacity: 1;
+  top: initial;
+  left: 5%;
+}
+a.right.carousel-control {
+  left: 15%;
+  right: inherit;
+}
 .container-fluid {
   padding: 0 2em;
 }
@@ -11782,9 +11794,10 @@ textarea:focus {
   padding: 40px 30px;
 }
 .news-update a .news-holder .news-content .news-head h4 {
-  min-height: 66px;
+  min-height: 44px;
   font-size: 20px;
   font-family: "brandon_med";
+  text-transform: capitalize;
 }
 .news-update a .news-holder .news-content .news-head p {
   font-size: 14px;
@@ -11965,6 +11978,7 @@ textarea:focus {
   padding-bottom: 0;
   color: #333333;
   line-height: 35px;
+  text-transform: capitalize;
 }
 .section-header.single-blog h2:before {
   display: none;
@@ -12551,6 +12565,19 @@ textarea:focus {
 }
 .section-content.content-services.content-inter-island {
   padding: 0;
+}
+.single-staff h4 {
+  margin: 0;
+}
+.staff-desc {
+  margin-top: 40px;
+}
+.staff-desc p {
+  font-size: 15px;
+  font-family: "RobotoLight";
+  line-height: 1.6;
+  color: #777777;
+  text-transform: none;
 }
 .staff-tab ul {
   border: 0;

@@ -33,7 +33,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 			<div class="col-md-8">
 				<div class="section-header common-content subpage-header single-blog mw-900">
 					<h2 class="animated fadeInUp"><?php the_title(); ?></h2>
-					<p class="animated fadeInUp time-text"><?php the_time('M j, Y') ?></p>
+					<p class="animated fadeInUp time-text"><?php the_time('j M Y') ?></p>
 					<div class="single-image animated fadeInUp delay-250">
 						<div class="gap-50"></div>
 						<div class="blog-img bg-inline" style="background-image: url('<?php echo wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));?>'); "></div>

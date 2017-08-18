@@ -10,7 +10,6 @@ get_header();
 
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
-
 <!-- BANNER SECTION -->
 <div class="section-banner banner-subpage">
     <div class="banner-bg bg-inline bg-gradient" style="background-image: url('http://cpa-wp/wp-content/uploads/2017/08/banner-cpa.png');"></div>
@@ -44,10 +43,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                           <div class="news-content">
                               <div class="news-head">
                                   <h4><?php the_title(); ?></h4>
-                                  <p><?php the_time('M j, Y') ?></p>
+                                  <p><?php the_time('j M Y') ?></p>
                               </div>
                                <div class="news-subhead">
-                                  <?php the_content(); ?>
+                                  <?php 
+                                  $content = get_the_content(); 
+                                  echo mb_strimwidth($content, 0, 220, '...') 
+                                  ?>
                               </div>
                                <div class="read-more">
                                   <div class="btn-common news-read" role="button">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>

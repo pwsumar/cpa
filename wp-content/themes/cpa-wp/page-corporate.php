@@ -177,20 +177,53 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             </div>
         </div>
         <div class="col-md-6">
-            <div class="grid-content grid-cpc text-white">
-              <div class="section-header">
-                  <h4>Duties and Functions of Members of the Board:</h4>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="grid-content text-white">
+                  <div class="section-header">
+                      <h4>Duties and Functions of Members of the Board:</h4>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                      <p>a. To manage, administer, operate, maintain, improve and develop, coordinate and otherwise govern the activities of all the ports within its territorial jurisdiction;</p>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                      <p>b. To investigate, prepare, adopt, implement and execute a comprehensive and orderly plan for the overall development of all ports within its territorial jurisdiction, and to update such plans, as may be warranted from time to time;</p>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                      <p>c. To raise revenues for the Authority through fees, tolls, charges, rentals and the like for the use of any property, equipment or facility owned or controlled by it; </p>
+                  </div>
+                </div>
               </div>
-              <div class="grid-desc corp-desc">
-                  <p>a. To manage, administer, operate, maintain, improve and develop, coordinate and otherwise govern the activities of all the ports within its territorial jurisdiction;</p>
+              <div class="item">
+                <div class="grid-content text-white">
+                  <div class="grid-desc corp-desc">
+                      <p>(e) To determine by survey and establish by engineering design the exact location, system and character of any and all port facilities which it may own, construct, establish, effectuate, operate or control; </p>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                      <p>(f) To provide and maintain port facilities including accessory buildings and installations within its territorial jurisdiction on its own or through the private sector; </p>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                      <p>(g) To prescribe and enforce rules and regulations on the use of wharves, piers and anchorages by ships and other watercraft;  </p>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                    <p>(h) To determine the organization of the Authority and create such functional units therein as it may deem necessary in the proper and efficient implementation of the functions and purposes of the Authority, including the appointment of officials and employees, it being understood that the security of tenure of these workers shall be respected consistent with existing laws; </p>
+                  </div>
+                </div>
               </div>
-              <div class="grid-desc corp-desc">
-                  <p>b. To investigate, prepare, adopt, implement and execute a comprehensive and orderly plan for the overall development of all ports within its territorial jurisdiction, and to update such plans, as may be warranted from time to time;</p>
-              </div>
-              <div class="grid-desc corp-desc">
-                  <p>c. To raise revenues for the Authority through fees, tolls, charges, rentals and the like for the use of any property, equipment or facility owned or controlled by it; </p>
-              </div>
-           </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
     </div>
 </div>
