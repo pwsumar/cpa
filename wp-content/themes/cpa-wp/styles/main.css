@@ -12245,7 +12245,6 @@ textarea:focus {
   margin-bottom: 0;
   max-width: 450px;
 }
-<<<<<<< HEAD
 .port-featured .project-item-full {
   height: 300px;
 }
@@ -12261,7 +12260,7 @@ textarea:focus {
   line-height: 35px;
   right: 25px;
   font-size: 25px;
-=======
+}
 .content-port-info p {
   max-width: 900px;
 }
@@ -12552,7 +12551,6 @@ textarea:focus {
 }
 .section-content.content-services.content-inter-island {
   padding: 0;
->>>>>>> fadf6661c43898e82e18b1a8bd4bf3931a9f655f
 }
 .staff-tab ul {
   border: 0;
