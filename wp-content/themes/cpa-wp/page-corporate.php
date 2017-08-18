@@ -207,9 +207,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                   <div class="grid-desc corp-desc">
                       <p>(g) To prescribe and enforce rules and regulations on the use of wharves, piers and anchorages by ships and other watercraft;  </p>
                   </div>
-                  <div class="grid-desc corp-desc">
-                    <p>(h) To determine the organization of the Authority and create such functional units therein as it may deem necessary in the proper and efficient implementation of the functions and purposes of the Authority, including the appointment of officials and employees, it being understood that the security of tenure of these workers shall be respected consistent with existing laws; </p>
-                  </div>
                 </div>
               </div>
             </div>
