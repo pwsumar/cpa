@@ -11212,6 +11212,15 @@ ul li a {
 .copy-relative {
   position: relative;
 }
+.float-right {
+  float: right;
+}
+.copy-before-title {
+  color: #c5cbd2;
+  font-family: 'brandon_med';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 /* General styles for all menus */
 .cbp-spmenu {
   background: #ea098d;
@@ -12579,6 +12588,144 @@ a.right.carousel-control {
   color: #777777;
   text-transform: none;
 }
+.section-content.content-accreditation .col-md-6 {
+  min-height: 600px;
+}
+.section-content.content-accreditation .col-md-6 .col-content-wrap {
+  padding: 4em;
+}
+.section-content.content-accreditation .col-md-6 .col-content-wrap h3 {
+  font-size: 22px;
+}
+.section-content.content-accreditation .col-md-6 .col-content-wrap h3::before {
+  left: 3.5%;
+}
+.section-content.content-accreditation .col-md-6 .col-content-wrap .content-common p {
+  font-size: 18px;
+  margin: 3em 0;
+}
+.section-content.content-accreditation .col-md-6 .col-content-wrap .content-common ul li {
+  color: #fff !important;
+  font-size: 15px;
+  padding: 0 0 0 1.5em;
+  position: relative;
+}
+.section-content.content-accreditation .col-md-6 .col-content-wrap .content-common ul li::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.section-content.content-accreditation .col-md-6 .col-content-wrap .content-common a {
+  margin: 3em 0 0;
+  color: #fff;
+}
+.section-content.content-accreditation .col-md-6:last-child .col-content-wrap {
+  padding: 10em 5em;
+}
+.section-content.content-accreditation .col-md-6:last-child .col-content-wrap h3 {
+  color: #535353;
+}
+.section-content.content-accreditation .col-md-6:last-child .col-content-wrap h3::before {
+  left: 50%;
+}
+.section-content.content-accreditation .col-md-6:last-child .col-content-wrap a {
+  margin: 0 auto;
+  color: #484444;
+}
+.section-content.content-accreditation .col-md-6:last-child .col-content-wrap p {
+  margin: 2em 0;
+}
+.content-application p {
+  font-size: 15px;
+  font-family: "RobotoLight";
+  line-height: 1.6;
+  color: #777777;
+  text-transform: none;
+  max-width: 85%;
+  margin: 2em auto 0;
+  font-size: 18px;
+}
+.content-application-construct {
+  min-height: 370px;
+  color: #fff;
+  font-size: 18px;
+  background-size: cover;
+  background-position: center;
+}
+.content-application-construct::before {
+  content: "dd";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content-application-construct h3 {
+  color: #fff;
+}
+.content-application-construct p {
+  max-width: 71%;
+}
+.content-application-operate p {
+  font-size: 18px;
+}
+.content-application-operate .read-more {
+  margin: 4em 0 0;
+}
+.content-application-operate .read-more a {
+  color: #333333;
+  font-size: 9px;
+  font-family: 'RobotoBold';
+}
+.content-application-fee .row {
+  margin: 4em 0;
+}
+.content-application-fee .row .col-content-wrap {
+  background: #0569aa;
+  color: #fff;
+  padding: 3em;
+}
+.content-application-fee .row .col-content-wrap::before {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: auto;
+}
+.content-application-fee .row .col-content-wrap h4 {
+  font-size: 22px;
+  color: #fff;
+  font-family: 'RobotoBold';
+}
+.content-application-fee .row .col-content-wrap ul {
+  margin: 2em auto;
+  max-width: 230px;
+}
+.content-application-fee .row .col-content-wrap ul li {
+  font-size: 15px;
+  padding: 0 0 0 2em;
+}
+.content-application-fee .row .col-content-wrap ul li::before {
+  content: "\f111";
+  font-family: 'FontAwesome';
+  font-size: 8px;
+  margin: 0 1em;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.content-application-fee .row .col-md-6:last-child ul {
+  max-width: 160px;
+}
+.content-application-fee .row .col-md-6:last-child ul li::before {
+  content: none;
+}
+.content-application-fee .copy-note {
+  max-width: 100%;
+}
 .staff-tab ul {
   border: 0;
   -webkit-box-shadow: 0px 0px 45px 2px rgba(0, 0, 0, 0.11);
@@ -13303,6 +13450,24 @@ a.right.carousel-control {
   background-size: initial;
   background-position: -5px 50px !important;
 }
+.icon-line {
+  margin: 1.5em 0;
+  display: block;
+  height: 1px;
+}
+.icon-line::before {
+  content: '';
+  height: 2px;
+  width: 50px;
+  background-color: #f9cc31;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
 @media (max-width: 1680px) {
   .section-content.content-facilities .col-md-6:last-child .col-content-wrap {
     padding: 5em;
@@ -13315,6 +13480,9 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 1366px) {
+  .section-content.content-accreditation .col-md-6:last-child .col-content-wrap {
+    padding: 10em 2em !important;
+  }
   .section-content.content-domestic .col-md-6:first-child .col-content-wrap {
     padding: 6em 3em;
   }
@@ -13343,6 +13511,12 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 1199px) {
+  .section-content.content-accreditation .col-md-6 .col-content-wrap h3::before {
+    left: 5%;
+  }
+  .section-content.content-accreditation .col-md-6 .col-content-wrap h3 {
+    line-height: 1.5;
+  }
   .section-content.content-domestic .col-md-6:first-child .col-content-wrap {
     padding: 3em;
   }
@@ -13367,7 +13541,7 @@ a.right.carousel-control {
   .copy-width-custom {
     max-width: 100%;
   }
-  .page-port-info .container-custom {
+  .page-custom .container-custom {
     padding: 0 3em;
   }
   .section-content.content-operators .col-md-2 .col-content-wrap {
@@ -13431,6 +13605,21 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 991px) {
+  .content-application-fee .row .col-md-6 {
+    margin: 0 0 1em;
+  }
+  .content-application p {
+    max-width: 100%;
+  }
+  .section-content.content-accreditation .col-md-6:last-child .col-content-wrap p {
+    max-width: 100%;
+  }
+  .section-content.content-accreditation .col-md-6:last-child .col-content-wrap {
+    padding: 4em 2em !important;
+  }
+  .section-content.content-accreditation .col-md-6 .col-content-wrap h3::before {
+    left: 3%;
+  }
   .section-content.content-facilities .col-md-6:last-child .col-content-wrap {
     padding: 2em;
   }
@@ -13448,6 +13637,8 @@ a.right.carousel-control {
   }
   .section-content.content-facilities .col-md-6 {
     min-height: auto;
+    float: left;
+    width: 100%;
   }
   .section-content.content-facilities .col-content-wrap {
     padding: 2em 0;
@@ -13479,7 +13670,7 @@ a.right.carousel-control {
   .section-content.content-services .content-common span {
     padding: 0;
   }
-  .page-port-info .container-custom {
+  .page-custom .container-custom {
     width: 750px;
     padding: 0 15px;
     margin: 0 auto;
@@ -13657,7 +13848,7 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 768px) {
-  .page-port-info .container-custom {
+  .page-custom .container-custom {
     padding: 0 30px;
     width: 100%;
   }
@@ -13759,6 +13950,38 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 480px) {
+  .content-application-fee .row {
+    margin: 2em 0;
+  }
+  .section-content.content-accreditation .col-md-6:last-child .col-content-wrap a {
+    margin: 0;
+  }
+  .section-content.content-accreditation .col-md-6:last-child .col-content-wrap h3::before {
+    left: 8.5%;
+  }
+  .icon-line::before {
+    left: 8.5%;
+  }
+  .page-business p {
+    text-align: left;
+  }
+  .page-business h3 {
+    text-align: left;
+  }
+  .content-application-operate .read-more {
+    margin: 2em 0 0;
+    float: left;
+  }
+  .content-application-construct p {
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .section-content.content-accreditation .col-md-6 .col-content-wrap h3::before {
+    left: 8%;
+  }
+  .section-content.content-accreditation .col-md-6 .col-content-wrap {
+    padding: 4em 2em;
+  }
   .section-content.content-domestic .col-md-6:first-child .col-content-wrap {
     padding: 2em;
   }
@@ -13774,7 +13997,7 @@ a.right.carousel-control {
   .section-content.content-services {
     padding: 2em 0;
   }
-  .page-port-info .container-custom {
+  .page-custom .container-custom {
     padding: 0 15px;
   }
   .section-content.content-domestic .grid-holder .grid-block-img {
