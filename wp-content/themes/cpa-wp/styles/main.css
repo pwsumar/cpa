@@ -12300,6 +12300,8 @@ a.right.carousel-control {
 }
 .section-content.content-intro p {
   color: #616161;
+  margin: 2em 0 4em;
+  max-width: 100%;
 }
 .section-content.content-operators {
   padding: 0;
@@ -12343,6 +12345,7 @@ a.right.carousel-control {
 }
 .section-content.content-services {
   font-family: 'RobotoRegular';
+  padding: 4em 0 0;
 }
 .section-content.content-services .copy-header {
   color: #616161;
@@ -12367,16 +12370,22 @@ a.right.carousel-control {
   background-position: -104px center !important;
   width: 50px;
 }
-.section-content.content-services .content-common .copy-width-custom .col-md-4:nth-child(1) .icon-service {
+.section-content.content-services .content-common .col-md-4:nth-child(4) {
+  margin: 2em 0;
+  left: 15%;
+}
+.section-content.content-services .content-common .col-md-4:nth-child(4) .icon-service {
   background-position: -122px center;
   width: 40px;
 }
-.section-content.content-services .content-common .copy-width-custom .col-md-4:nth-child(2) .icon-service {
-  background-position: -163px center;
-  width: 40px;
+.section-content.content-services .content-common .col-md-4:last-child {
+  margin: 2em 0;
+  float: right;
+  width: 45%;
+  right: 8%;
 }
-.section-content.content-services .content-common .copy-width-custom .col-md-4:nth-child(2) .icon-service.icon-service-2 {
-  background-position: center 50px !important;
+.section-content.content-services .content-common .col-md-4:last-child .icon-service {
+  background-position: -163px center;
   width: 40px;
 }
 .section-content.content-services .content-common p {
@@ -12556,9 +12565,6 @@ a.right.carousel-control {
   line-height: 1.5;
   font-family: 'RobotoBold';
 }
-.content-inter-island {
-  padding-top: 0;
-}
 .section-content.content-domestic .col-md-6 {
   min-height: 673px;
 }
@@ -12573,7 +12579,21 @@ a.right.carousel-control {
   font-family: 'RobotoRegular';
 }
 .section-content.content-services.content-inter-island {
-  padding: 0;
+  padding: 2em 0;
+}
+.section-content.content-services.content-inter-island .content-common .col-md-4 {
+  width: 33.33333333%;
+  margin: 0;
+  float: left;
+  right: 0;
+}
+.section-content.content-services.content-inter-island .content-common .col-md-4 span {
+  min-height: 9em;
+}
+.section-content.content-services.content-inter-island .content-common .col-md-4 a {
+  color: #333333;
+  font-size: 9px;
+  font-family: 'RobotoBold';
 }
 .single-staff h4 {
   margin: 0;
@@ -12590,6 +12610,9 @@ a.right.carousel-control {
 }
 .section-content.content-accreditation .col-md-6 {
   min-height: 600px;
+}
+.section-content.content-accreditation .col-md-6:first-child {
+  float: right;
 }
 .section-content.content-accreditation .col-md-6 .col-content-wrap {
   padding: 4em;
@@ -12618,6 +12641,14 @@ a.right.carousel-control {
 .section-content.content-accreditation .col-md-6 .col-content-wrap .content-common a {
   margin: 3em 0 0;
   color: #fff;
+}
+.section-content.content-accreditation .col-md-6:last-child {
+  background-color: #fff !important;
+  text-align: center;
+}
+.section-content.content-accreditation .col-md-6:last-child .section-header.animated.fadeInRight {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 .section-content.content-accreditation .col-md-6:last-child .col-content-wrap {
   padding: 10em 5em;
@@ -12653,7 +12684,7 @@ a.right.carousel-control {
   background-position: center;
 }
 .content-application-construct::before {
-  content: "dd";
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -12665,6 +12696,7 @@ a.right.carousel-control {
 }
 .content-application-construct p {
   max-width: 71%;
+  color: #fff;
 }
 .content-application-operate p {
   font-size: 18px;
@@ -13469,9 +13501,6 @@ a.right.carousel-control {
   transform: translate(-50%, 0);
 }
 @media (max-width: 1680px) {
-  .section-content.content-facilities .col-md-6:last-child .col-content-wrap {
-    padding: 5em;
-  }
   .section-content.content-operators .col-md-2 .col-content-wrap {
     min-height: 220px;
   }
@@ -13511,6 +13540,9 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 1199px) {
+  .content-inter-island .container-custom {
+    padding: 0 2em;
+  }
   .section-content.content-accreditation .col-md-6 .col-content-wrap h3::before {
     left: 5%;
   }
@@ -13605,6 +13637,25 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 991px) {
+  .section-content.content-services .content-common .col-md-4:nth-child(4) {
+    margin: 0 0 1em;
+    left: 0;
+  }
+  .section-content.content-services .content-common .col-md-4:last-child {
+    margin: 0;
+    float: left;
+    width: 100%;
+    right: 0;
+  }
+  .section-content.content-services.content-inter-island .content-common .col-md-4 {
+    width: 100%;
+  }
+  .section-content.content-services.content-inter-island .content-common .col-md-4 span {
+    min-height: auto;
+  }
+  .section-content.content-services.content-inter-island .content-common .col-md-4 .read-more {
+    margin: 2em 0;
+  }
   .content-application-fee .row .col-md-6 {
     margin: 0 0 1em;
   }
@@ -13872,6 +13923,9 @@ a.right.carousel-control {
   }
 }
 @media (max-width: 600px) {
+  .content-inter-island .container-custom {
+    padding: 0 15px;
+  }
   .section-other-services span {
     padding: 0;
   }
