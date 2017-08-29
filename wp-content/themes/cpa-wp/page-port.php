@@ -36,16 +36,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     </div>
     <div class="container">
     	<div class="featured-projects">
-    		<div class="project-item-full">
-    			<a href="" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/rate1.jpg)"><img src="<?php echo get_template_directory_uri(); ?>/images/rate1.jpg">
-    				<span class="caption"><span>Foreign Tariffs and Rates<i class="fa fa-angle-right"></i></span></span>
-    			</a>
-    		</div>
-    		<div class="project-item-full">
-    			<a href="" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/rate2.jpg)"><img src="<?php echo get_template_directory_uri(); ?>/images/rate2.jpg">
-    				<span class="caption"><span>Domestic Tariffs and Rates<i class="fa fa-angle-right"></i></span></span>
-    			</a>
-    		</div>
+            <?php while (have_rows('port_charge')): the_row(); ?>
+    	        <div class="project-item-full">
+        			<a href="<?php the_sub_field('charge_link'); ?>" style="background-image: url(<?php the_sub_field('charge_image'); ?>)"><img src="<?php the_sub_field('charge_image'); ?>">
+        				<span class="caption"><span><?php the_sub_field('charge_text'); ?>"<i class="fa fa-angle-right"></i></span></span>
+        			</a>
+        		</div>
+            <?php endwhile; ?>
     	</div>
     </div>
 </div>

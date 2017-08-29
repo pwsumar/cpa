@@ -12665,6 +12665,7 @@ a.right.carousel-control {
 }
 .content-application-construct p {
   max-width: 71%;
+  color: #fff;
 }
 .content-application-operate p {
   font-size: 18px;
@@ -13263,6 +13264,9 @@ a.right.carousel-control {
   top: 0;
   width: 50%;
   height: 100%;
+}
+.section-content.content-domestic.content-lease .col-md-6 {
+  min-height: initial;
 }
 .bg-inline {
   background-size: cover;

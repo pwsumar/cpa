@@ -308,6 +308,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bg-permit.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.29146e+06,
+		"inputAbbreviatedPath": "\/images\/bg-permit.jpg",
+		"outputAbbreviatedPath": "\/images\/bg-permit.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/board1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1179,7 +1190,7 @@
 		},
 	"\/scripts\/vendor\/bootstrap.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scripts\/vendor\/bootstrap.min.js",
 		"outputAbbreviatedPath": "\/scripts\/vendor\/min\/bootstrap.min-min.js",
@@ -1190,7 +1201,7 @@
 		},
 	"\/scripts\/vendor\/css3-animate-it.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scripts\/vendor\/css3-animate-it.js",
 		"outputAbbreviatedPath": "\/scripts\/vendor\/min\/css3-animate-it-min.js",
@@ -3227,6 +3238,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/template-parts\/page-business.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template-parts\/page-business.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/template-parts\/page\/content-front-page-panels.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -3322,6 +3342,20 @@
 	],
 "lastSavedByUser": "Philweb Frontend",
 "manualImportLinks": {
+	"\/scripts\/main.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/scripts\/vendor\/bootstrap.min.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/scripts\/vendor\/css3-animate-it.js",
+			"position": 1,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",

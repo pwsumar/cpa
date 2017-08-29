@@ -30,21 +30,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
         </div>
         <div class="gap-50"></div>
         <div class="grid-purpose animated fadeInUp delay-250 afterclear">
+          <?php while (have_rows('purpose')): the_row(); ?>
             <div class="col-md-4">
                 <div class="purpose-content">
-                    <p>To integrate and coordinate the planning development, construction and operations of ports and port facilities ithin its territorial jurisdiction, consistent with the needs and requirements of the region;</p>
+                    <p><?php the_sub_field('purpose_content'); ?></p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="purpose-content">
-                    <p>To integrate and coordinate the planning development, construction and operations of ports and port facilities ithin its territorial jurisdiction, consistent with the needs and requirements of the region;</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="purpose-content">
-                    <p>To integrate and coordinate the planning development, construction and operations of ports and port facilities ithin its territorial jurisdiction, consistent with the needs and requirements of the region;</p>
-                </div>
-            </div>
+          <?php endwhile; ?>
         </div>
     </div>
 </div>
@@ -57,7 +49,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                         <div class="tab-pane fade in active">
                           <h4>Jurisdiction</h4>
                           <div class="gap-20"></div>
-                          <p>The territorial jurisdiction of the Authority includes all ports, seas, lakes, rivers and all other navigable inland waterways within the province of Cebu, the City of Cebu, and all other highly urbanized cities which may be created after the enactment of R.A. 7621.</p>
+                          <?php the_field('jurisdiction_content'); ?>
                         </div>
                     </div>
                 </div>
@@ -94,11 +86,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 <div class="section-content pd-10 animatedParent animateOnce">
     <div class="container">
         <div class="section-header text-center animated fadeInUp">
-            <p>governing body</p>
-            <h3>The cebu port commission</h3>
+            <?php the_field('commission_header'); ?>
         </div>
         <div class="content-common text-center">
-            <p class="animated fadeInUp delay-250 go">The Cebu Port Commission (CPC) is the governing body of the Cebu Port Authority, which is composed of the following:</p>
+            <p class="animated fadeInUp delay-250 go"><?php the_field('commission_content'); ?></p>
         </div>
     </div>
     <div class="grid-holder animated fadeInUp afterclear">
@@ -112,25 +103,14 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                     </div>
                     <div class="col-md-6 p-0 grid-height">
                         <div class="grid-content">
-                            <div class="section-header">
-                                <h4>CPC Composition</h4>
-                            </div>
+                          <div class="section-header">
+                              <h4>CPC Composition</h4>
+                          </div>
+                          <?php while (have_rows('cpc_composition')): the_row(); ?>
                             <div class="grid-desc corp-desc">
-                                <p>Chairman</p>
-                                <p>Alternate Chairman</p>
-                                <p>Vice-chairman* (concurrent as CPA General Manager)</p>
-                                <p>Commissioners (representing the following sectors)</p>
+                                <p><?php the_sub_field('cpc_composition_content'); ?></p>
                             </div>
-                            <div class="grid-desc corp-desc">
-                                <p>a. Shipowners and Shipping Operators Sector (2)</p>
-                                <p>b. Cargo Handling Labor Sector (2)</p>
-                                <p>c. Business Sector (2)</p>
-                            </div>
-                            <div class="grid-desc corp-desc">
-                                <p>* The Vice-Chairman, who shall be designated as the Cebu Port General Manager, shall be elected by the Commissioners from among themselves.</p>
-
-                                <p>The Corporate Board Secretary</p>
-                            </div>
+                          <?php endwhile; ?>
                         </div>
                     </div>
                 </div>
@@ -148,27 +128,11 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                             <div class="tab-pane fade in active">
                               <h4>7th CPC MEMBERS</h4>
                               <ul class="cpc-members">
+                                <?php while (have_rows('cpc_members')): the_row(); ?>
                                   <li>
-                                      <a href="">DOTr Sec. Arthur P. Tugade</a>
+                                      <a href="<?php the_sub_field('cpc_member_link'); ?>"><?php the_sub_field('cpc_member_name'); ?></a>
                                   </li>
-                                  <li>
-                                      <a href="">Usec. Felipe A. Judan & Angelo C. Verdan</a>
-                                  </li>
-                                  <li>
-                                      <a href="">Atty. Jose Mario Elino T. Tan</a>
-                                  </li>
-                                  <li>
-                                      <a href="">Engr. Allan G. Alfon</a>
-                                  </li>
-                                  <li>
-                                      <a href="">Atty. Regina R. Barleta</a>
-                                  </li>
-                                  <li>
-                                      <a href="">Vincent Franco D. Frasco</a>
-                                  </li>
-                                  <li>
-                                      <a href="">Atty. Joselito O. Pedaria</a>
-                                  </li>
+                                <?php endwhile; ?>
                               </ul>
                             </div>
                         </div>
@@ -207,18 +171,32 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                   <div class="grid-desc corp-desc">
                       <p>(g) To prescribe and enforce rules and regulations on the use of wharves, piers and anchorages by ships and other watercraft;  </p>
                   </div>
+                  <div class="grid-desc corp-desc">
+                      <p>(h) To determine the organization of the Authority and create such functional units therein as it may deem necessary in the proper and efficient implementation of the functions and purposes of the Authority, including the appointment of officials and employees, it being understood that the security of tenure of these workers shall be respected consistent with existing laws; </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="grid-content text-white">
+                  <div class="grid-desc corp-desc">
+                      <p>(i) To define the duties and fix the compensation and benefits of the General Manager, Deputy General Manager, Port Managers, and other officers of the Authority, in accordance with the rules and regulations of the Civil Service Commission and the Department of Budget and Management; </p>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                      <p>(j) To approve the annual budget of the Authority and/or such supplemental budgets thereof as may be submitted by the General Manager from time to time; and </p>
+                  </div>
+                  <div class="grid-desc corp-desc">
+                      <p>(k) To perform such other duties as may be necessary and convenient for the attainment of the objectives of the Authority.</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
             </a>
             <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -229,26 +207,20 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
         <div class="featured-projects">
             <div class="col-md-12">
                 <div class="project-item-full">
-                    <a href="" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/board1.jpg)"><img src="<?php echo get_template_directory_uri(); ?>/images/board1.jpg">
+                    <a href="<?php the_field('board_commitees_link'); ?>" style="background-image: url(<?php the_field('board_commitees_image'); ?>)"><img src="<?php the_field('board_commitees_image'); ?>">
                         <span class="caption"><span>Board Committees<i class="fa fa-angle-right"></i></span></span>
                     </a>
                 </div>
             </div>
-            
+            <?php while (have_rows('bottom_grid')): the_row(); ?>
             <div class="col-md-6">
                 <div class="project-item-full">
-                    <a href="" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/board2.jpg)"><img src="<?php echo get_template_directory_uri(); ?>/images/board2.jpg">
+                    <a href="<?php the_sub_field('bottom_grid_link'); ?>" style="background-image: url(<?php the_sub_field('bottom_grid_image'); ?>)"><img src="<?php the_sub_field('bottom_grid_image'); ?>">
                         <span class="caption"><span>Attendance Records<i class="fa fa-angle-right"></i></span></span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="project-item-full">
-                <a href="" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/board3.jpg)"><img src="<?php echo get_template_directory_uri(); ?>/images/board3.jpg">
-                    <span class="caption"><span>Key Officials and Contact Details<i class="fa fa-angle-right"></i></span></span>
-                </a>
-            </div>
-            </div>
+            <?php endwhile; ?>
         </div>
     </div>
 </div>
